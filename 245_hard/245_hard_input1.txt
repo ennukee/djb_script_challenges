@@ -1,0 +1,10 @@
+123.45.17.8 123.45.123.45 University of Vestige
+123.50.1.1 123.50.10.1 National Center for Pointlessness
+188.0.0.3 200.0.0.250 Mayo Tarkington
+200.0.0.251 200.0.0.255 Daubs Haywire Committee
+200.0.1.1 200.255.255.255 Geopolitical Encyclopedia
+222.222.222.222 233.233.233.233 SAP Rostov
+250.1.2.3 250.4.5.6 Shavian Refillable Committee
+123.45.100.0 123.60.32.1 United Adverbs
+190.0.0.1 201.1.1.1 Shavian Refillable Committee
+238.0.0.1 254.1.2.3 National Center for Pointlessness
