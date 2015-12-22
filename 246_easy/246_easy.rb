@@ -1,3 +1,13 @@
+#
+# /r/dailyprogrammer Challenge #246 [Easy] 
+#          X-mass lights            
+# 										   
+# Short Summary: Develop a program capable of deducing various details based on 
+# 				 electricity laws/rules (see full problem for more details)	   
+# 										   
+# Full Problem: https://www.reddit.com/r/dailyprogrammer/comments/3xpgj8/20151221_challenge_246_easy_xmass_lights/
+#  
+
 def draw_circuit(i, s) 
 	if(i>5)
 		s.empty? ? draw_circuit(i-5, s+"*--|>|---|>|---|>|---|>|---|>|--*\n |                             |\n") : draw_circuit(i-5, s+" --|>|---|>|---|>|---|>|---|>|-- \n |                             |\n")
