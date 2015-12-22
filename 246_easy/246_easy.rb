@@ -12,9 +12,14 @@ def draw_circuit(i, s)
 	if(i>5)
 		s.empty? ? draw_circuit(i-5, s+"*--|>|---|>|---|>|---|>|---|>|--*\n |                             |\n") : draw_circuit(i-5, s+" --|>|---|>|---|>|---|>|---|>|-- \n |                             |\n")
 	elsif(i>0&&i<=5)
+		s.empty? ? draw_circuit(0, s+"*-"+("-|>|--"*i)+("-----"*(5-i))+"*\n") : 
 		draw_circuit(0, s+" -"+("-|>|--"*i)+("-----"*(5-i))+" \n")
 	else s
 	end
+end
+
+def leds(i)
+	(1200 / i.to_f / 20 * 5).to_i
 end
 
 def part4(v1, mA, v2, mAh, h)
@@ -26,13 +31,13 @@ end
 
 puts "Part 1"
 File.open("246_easy_input1.txt", "r").readlines.each do |line|
-	puts (1200 / line.to_f / 20 * 5).to_i
+	puts leds(line.to_f)
 end
 puts
 
 puts "Part 2"
 File.open("246_easy_input2.txt", "r").readlines.each do |line|
-	puts draw_circuit(line.to_i, "")
+	puts draw_circuit(leds(line.to_f), "")
 end
 puts
 
