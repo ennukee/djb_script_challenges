@@ -1,6 +1,4 @@
 def decode(s, i)
-	puts "s: #{s}"
-	puts "i: #{i}"
 	return i if s.nil? || s.empty?
 	l = File.open("letter_hash.txt", "r").readline
 	conv = Hash[*l.split(' ').flatten(1)].invert
