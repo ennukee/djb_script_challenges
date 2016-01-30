@@ -4,6 +4,8 @@
 
 Solutions will generally be in Ruby, Scala, Python, or perhaps C++. My solution language will be based on which language I think it'd be easiest to accomplish in. Sometimes I may submit in more than one language if I feel like it (though that will be a very rare occurence).
 
+My number of responses will slow down drastically with the release of my personal project (TimelapsE) and the semester restarting. May attempt some easy ones and shorter intermediate ones occassionally.
+
 Note: This is not meant to be run as a group. Each file contains a specific problem that the program solves independent of every other folder. The problem description is at the top of (most of) the files. 
 
 ###How to run each type
