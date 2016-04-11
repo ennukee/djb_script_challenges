@@ -1,3 +1,13 @@
+#
+# /r/dailyprogrammer Challenge #262 [Easy] 
+#            MaybeNumeric           
+# 										   
+# Short Summary: The scope of this problem is kind of specific, so please see
+#                the provided link for an accurare description of this problem
+# 										   
+# Full Problem: https://www.reddit.com/r/dailyprogrammer/comments/3xdmtw/20151218_challenge_245_hard_guess_whois/
+#  
+
 def flatten(i):
     return sum(i, [])
 
