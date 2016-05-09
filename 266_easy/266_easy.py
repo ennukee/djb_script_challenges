@@ -66,17 +66,35 @@ inp = """1 2
 15 16
 """
 
+# - - Main Challenge - - #
+
+# Clean input so it can be used properly
+
 # Some weird syntax error was preventing me from using list comprehensions
 # effectively here. Oh well.
-
-# Generate large array of integers from node-pair values of input
 input_list = []
 for x in inp.split():
   for y in x.strip().split():
     input_list.append(int(y))
 
-result = dict(zip(range(1,17), [input_list.count(x) for x in range(1,17)]))
+# Logic portion of main part
+def solve(N, i):
+  return dict(zip(range(1, N + 1), [i.count(x) for x in range(1, N + 11)]))
 
-for i,v in sorted(result.items()):
+# Printing the result to confirm its correctness
+for i,v in sorted(solve(16, input_list).items()):
   print("Node {} has a degree of {}".format(i, v))
 
+
+# - - Bonus - - #
+
+# Clean input so it can be properly used
+clean_input = [x.strip() for x in inp.split('\n')]
+
+# Logic portion of main part
+def solve_bonus(N, i):
+  return [[1 if "{} {}".format(row, column) in i else 0 for column in range(1, N + 1)] for row in range(1, N + 1)]
+
+# Printing the result to confirm its correctness
+for row in solve_bonus(16, clean_input):
+  print(row)
