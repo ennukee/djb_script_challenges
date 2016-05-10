@@ -92,8 +92,8 @@ for i,v in sorted(solve(16, input_list).items()):
 clean_input = [[int(y) for y in x.strip().split()] for x in inp.split('\n')]
 
 # Logic portion of main part
-    def solve_bonus(N, i):
-      return [[1 if [row, column] in i or [column, row] in i else 0 for column in range(1, N + 1)] for row in range(1, N + 1)]
+def solve_bonus(N, i):
+  return [[1 if [row, column] in i or [column, row] in i else 0 for column in range(1, N + 1)] for row in range(1, N + 1)]
 
 # Printing the result to confirm its correctness
 for row in solve_bonus(16, clean_input):
