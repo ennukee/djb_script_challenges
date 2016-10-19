@@ -1,5 +1,5 @@
-#My /r/dailyprogrammer and Project Euler solution hub
+#My various scripts!
 
-[Click here to view the subreddit](https://dailyprogrammer.reddit.com)
+Includes [/r/dailyprogrammer](https://dailyprogrammer.reddit.com) solutions and [Project Euler](https://projecteuler.net/about) solutions.
 
-Solutions will be mostly in Python (/r/dailyprogrammer reddit challenges) or C++ (Project Euler challenges).
+Solutions will be mostly in Python (/r/dailyprogrammer reddit challenges) or C++ (Project Euler challenges). Other scripts may vary.
