@@ -5,8 +5,8 @@
 
 	Dylan Bowers
 	Elapsed Run-time: 0.000000s
-	Result: 267333
-
+	Result: 233168
+	
 */
 
 #include <stdio.h>
