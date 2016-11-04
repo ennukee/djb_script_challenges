@@ -85,10 +85,10 @@ I will be approaching this problem with the goal of maximizing the difference be
 
 ```
 ASSUMPTIONS
- > turn = 0 means that it is Akshay\'s turn
- > turn = 1 means that it is Andrew\'s turn
- > `ak_gain` param refers to "Akshay\'s Total Gain" from that path
- > `an_gain` param refers to "Andrew\'s Total Gain" from that path
+ > turn = 0 means that it is Akshays turn
+ > turn = 1 means that it is Andrews turn
+ > `ak_gain` param refers to "Akshays Total Gain" from that path
+ > `an_gain` param refers to "Andrews Total Gain" from that path
 
 given a state_table ST
 algorithm(ak_gain, an_gain, turn, remaining_set)
@@ -97,7 +97,7 @@ algorithm(ak_gain, an_gain, turn, remaining_set)
     return difference of ak_gain and an_gain
   endif
   
-  if turn == 0 (akshay's turn)
+  if turn == 0 
     recurse on the two situations where akshay picks the front or end
     compare these two, pick the instance that is more of a gain
     if ST[remaining_set] doesn't exist yet or larger > known state in ST:
@@ -106,7 +106,7 @@ algorithm(ak_gain, an_gain, turn, remaining_set)
     
     return the most beneficial between the two recursion (for akshay)
   
-  else (andrew's turn)
+  else 
     recurse on the two situations where andrew picks the front or end
     compare these two, pick the instance that is more of a gain
     if ST[remaining_set] doesn't exist yet or larger > known state in ST:
