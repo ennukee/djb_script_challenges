@@ -18,7 +18,7 @@ The resulting logic of the recursive calls will evaluate to two full gloss-overs
 
 *The syntax set[n:] means "all values at index n and forward, so if set = [1,2,3,4] then set[1:] = [2,3,4]*
 
-(I really hope this question doesn't require a big explanation, I'm not sure what else to put here)
+(I really hope this question doesnt require a big explanation, I'm not sure what else to put here)
 
 ## Question 2
 
@@ -85,10 +85,10 @@ I will be approaching this problem with the goal of maximizing the difference be
 
 ```
 ASSUMPTIONS
- > turn = 0 means that it is Akshay's turn
- > turn = 1 means that it is Andrew's turn
- > `ak_gain` param refers to "Akshay's Total Gain" from that path
- > `an_gain` param refers to "Andrew's Total Gain" from that path
+ > turn = 0 means that it is Akshay\'s turn
+ > turn = 1 means that it is Andrew\'s turn
+ > `ak_gain` param refers to "Akshay\'s Total Gain" from that path
+ > `an_gain` param refers to "Andrew\'s Total Gain" from that path
 
 given a state_table ST
 algorithm(ak_gain, an_gain, turn, remaining_set)
