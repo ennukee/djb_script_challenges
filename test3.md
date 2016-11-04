@@ -100,7 +100,7 @@ algorithm(ak_gain, an_gain, turn, remaining_set)
   if turn == 0 
     recurse on the two situations where akshay picks the front or end
     compare these two, pick the instance that is more of a gain
-    if ST[remaining_set] doesn't exist yet or larger > known state in ST:
+    if ST[remaining_set] doesnt exist yet or larger > known state in ST:
       ST[remaining_set] = (gain, the move that resulted in larger)
     endif
     
@@ -109,7 +109,7 @@ algorithm(ak_gain, an_gain, turn, remaining_set)
   else 
     recurse on the two situations where andrew picks the front or end
     compare these two, pick the instance that is more of a gain
-    if ST[remaining_set] doesn't exist yet or larger > known state in ST:
+    if ST[remaining_set] doesnt exist yet or larger > known state in ST:
       ST[remaining_set] = (gain, the move that resulted in larger)
     endif
   endif
