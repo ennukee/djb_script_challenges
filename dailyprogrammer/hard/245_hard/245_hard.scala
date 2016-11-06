@@ -9,10 +9,7 @@
 // Full Problem: https://www.reddit.com/r/dailyprogrammer/comments/3xdmtw/20151218_challenge_245_hard_guess_whois/
 //  
 
-// Not a fully implemented solution. There's a flaw somewhere in 'isInRange' of my IPRange
-// class, but I'm a tad lazy and I'm already too late to submit this solution regardless.
-// Probably won't fix it. Maybe in the future. It works except that it registers IPs in a 
-// specific range when it shouldn't (though it's not crazy whacked up like you'd think)
+// Not a fully implemented solution. There's a flaw somewhere in 'isInRange' of my IPRange, but I haven't found the time to fix it.
 
 import scala.io.Source
 
