@@ -4,8 +4,8 @@
 	Problem #214
 
 	Dylan Bowers
-	Elapsed Run-time: 4.074000s
-	Result: 1677366278943
+	
+	https://projecteuler.net/problem=214
 	
 */
 

@@ -1,12 +1,11 @@
 /*
 	
 	Project Euler 
-	Problem #214
+	Problem #174
 
 	Dylan Bowers
 
-	Elapsed Run-time: 0.072000s
-	Result: 209566
+	https://projecteuler.net/problem=174
 	
 */
 
