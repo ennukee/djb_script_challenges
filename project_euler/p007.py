@@ -1,3 +1,12 @@
+#	
+#	Project Euler 
+#	Problem #7
+#
+#	Dylan Bowers
+#
+#	https://projecteuler.net/problem=7
+#	
+
 from math import sqrt
 
 def isprime(x):
