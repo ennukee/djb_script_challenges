@@ -1,0 +1,25 @@
+from math import sqrt
+
+# Uses the Sieve of Eratosthenes to provide a list of prime values up to a max value `m`
+# https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
+def list_primes(m):
+	# Assume everything is a prime at first
+	prime_v = [False, False] + [True] * (m - 1)
+
+	# Max bound while sieving is sqrt(upper bound)
+	for n in range(2, int(sqrt(m)) + 1):
+
+		# If we consider some `n` to be prime, then we need to consider all future multiples to be not prime
+		if prime_v[n]:
+			
+			# However, the values between `n` and `n*n` would be marked 'not prime' by other prime values,
+			# so we do not need to consider those values and we start at n * n
+			for np in range(n * n, m, n):
+				prime_v[np] = False
+	return prime_v
+
+# We choose this approach of a simple range(2, int(sqrt(x) + 1)) because
+# this overall method is much faster for large `x` even if the code is slightly
+# uglier
+def isprime(x):
+	return x % 2 == 1 and not any(x % i == 0 for i in range(3, int(sqrt(x) + 1), 2))
