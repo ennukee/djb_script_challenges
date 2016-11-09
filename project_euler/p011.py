@@ -1,10 +1,10 @@
 #	
 #	Project Euler 
-#	Problem #10
+#	Problem #11
 #
 #	Dylan Bowers
 #
-#	https://projecteuler.net/problem=10
+#	https://projecteuler.net/problem=11
 #	
 
 import operator
