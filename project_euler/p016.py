@@ -4,7 +4,7 @@
 #
 #	Dylan Bowers
 #
-# https://projecteuler.net/problem=16
+#	https://projecteuler.net/problem=16
 #	
 
 def simplify(a):
