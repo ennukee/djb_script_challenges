@@ -1,7 +1,7 @@
 /*
 
 	Project Euler 
-	Problem #5
+	Problem #6
 
 	Dylan Bowers
 	Elapsed Run-time: 0.000000s
@@ -22,9 +22,9 @@ using namespace std;
 
 #define LIMIT (100)
 
-uint32_t p006() {
-	uint32_t sq_nums = 0;
-	uint32_t sq_sums = 0;
+int p006() {
+	int sq_nums = 0;
+	int sq_sums = 0;
 
 	for(int i = 1; i <= LIMIT; i++) {
 		sq_nums += pow(i, 2);
@@ -39,7 +39,7 @@ uint32_t p006() {
 int main() {
 	clock_t s, e;
 	s = clock();
-	uint32_t r = p006();
+	int r = p006();
 	e = clock();
 	printf("Result: %d\n", r);
 	printf("Code executed in %fs\n", ((float)e - (float)s)/CLOCKS_PER_SEC);
