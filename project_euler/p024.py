@@ -25,9 +25,14 @@ def p024(n, fm):
     # of the code below. Think of it as subsetting the potential ranges because
     # we know that the answers are in a specific order
 
+
+
     remaining = range(0, fm)
     out = []
     c_range_max = math.factorial(fm)
+
+    # We don't want input like "the 200th lexicographic order of 0, 1, 2"
+    assert n < c_range_max, 'the `n`th order must be < `fm`!'
 
     while fm > 0:
         c_range_max = c_range_max / fm
