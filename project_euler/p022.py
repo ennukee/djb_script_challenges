@@ -1,3 +1,12 @@
+#	
+#	Project Euler 
+#	Problem #22
+#
+#	Dylan Bowers
+#
+#	https://projecteuler.net/problem=22
+#	
+
 def p022(i):
 	return sum(sum(ord(x) - 64 for x in i[n]) * (n + 1) for n in range(len(i)))
 
