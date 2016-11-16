@@ -6,7 +6,6 @@
 #
 #	https://projecteuler.net/problem=55
 #
-#
 
 import euler_shared
 def lychrel_iter(n, cur_iter):
