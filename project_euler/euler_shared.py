@@ -1,4 +1,4 @@
-from math import sqrt
+from math import sqrt, ceil
 
 # Uses the Sieve of Eratosthenes to provide a list of prime values up to a max value `m`
 # https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
@@ -11,7 +11,7 @@ def list_primes(m):
 
 		# If we consider some `n` to be prime, then we need to consider all future multiples to be not prime
 		if prime_v[n]:
-			
+
 			# However, the values between `n` and `n*n` would be marked 'not prime' by other prime values,
 			# so we do not need to consider those values and we start at n * n
 			for np in range(n * n, m, n):
@@ -23,3 +23,9 @@ def list_primes(m):
 # uglier
 def isprime(x):
 	return x % 2 == 1 and not any(x % i == 0 for i in range(3, int(sqrt(x) + 1), 2))
+
+def is_palindrome(n):
+	assert str(n).isdigit(), 'is_palindrome parameter must be an integer'
+
+	n = str(n)
+	return all(n[i] == n[len(n)-i-1] for i in range(0, ceil(len(n) / 2)))

@@ -1,11 +1,11 @@
-#	
-#	Project Euler 
+#
+#	Project Euler
 #	Problem #53
 #
 #	Dylan Bowers
 #
 #	https://projecteuler.net/problem=53
-# Unfinished Solution	
+# 	
 #
 
 import math
