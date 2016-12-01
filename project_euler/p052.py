@@ -1,10 +1,10 @@
 #	
 #	Project Euler 
-#	Problem #25
+#	Problem #52
 #
 #	Dylan Bowers
 #
-#	https://projecteuler.net/problem=25
+#	https://projecteuler.net/problem=52
 #	
 
 def p052():

@@ -1,3 +1,12 @@
+#   
+#   Project Euler 
+#   Problem #24
+#
+#   Dylan Bowers
+#
+#   https://projecteuler.net/problem=24
+#   
+
 import math
 def p024(n, fm):
     # So this one was a fun one to solve

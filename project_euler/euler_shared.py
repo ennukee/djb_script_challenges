@@ -23,3 +23,15 @@ def list_primes(m):
 # uglier
 def isprime(x):
 	return x % 2 == 1 and not any(x % i == 0 for i in range(3, int(sqrt(x) + 1), 2))
+
+def array_equivalent(a1, a2):
+	if len(a1) != len(a2): return False
+	for i in range(len(a1)):
+		if a1[i] not in a2: return False
+		else:
+			a2 = a2[:a2.index(a1[i])] + a2[a2.index(a1[i]) + 1:]
+	return True
+
+def array_all_same(a1):
+	assert len(a1) > 0, 'Array must not be empty'
+	return all(x == a1[0] for x in a1)
