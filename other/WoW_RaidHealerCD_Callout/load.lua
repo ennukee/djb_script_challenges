@@ -1,8 +1,3 @@
--- Trigger: Custom
--- Event Type: Event
--- Event(s): COMBAT_LOG_EVENT_UNFILTERED
-
--- Custom Trigger (timed for 5s)
 function(e, ...)
     event = select(2, ...)
     source = select(5, ...)
@@ -41,7 +36,6 @@ function(e, ...)
     end
     
     if event == "SPELL_AURA_APPLIED" and dest == source then
-        print(spell)
         for _,v in pairs(aura_env.raid_channelhealer_cds) do
             if v == spell and spell ~= aura_env.last_used_cd then
                 aura_env.last_used_cd = spell
