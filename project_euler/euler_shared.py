@@ -22,6 +22,7 @@ def list_primes(m):
 # this overall method is much faster for large `x` even if the code is slightly
 # uglier
 def isprime(x):
+	if x <= 1: return False
 	return x % 2 == 1 and not any(x % i == 0 for i in range(3, int(sqrt(x) + 1), 2))
 
 def array_equivalent(a1, a2):
