@@ -42,3 +42,31 @@ def is_palindrome(n):
 
 	n = str(n)
 	return all(n[i] == n[len(n)-i-1] for i in range(0, ceil(len(n) / 2)))
+
+def list_factors_of(m):
+	# Mimicking the Sieve of Eratosthenes
+	factors = [[0], [1]] + [[]] * (m - 1)
+	prime_v = [False, False] + [True] * (m - 1)
+
+	# Max bound while sieving is sqrt(upper bound)
+	for n in range(2, int(sqrt(m)) + 1):
+
+		if len(factors[n]) == 0:
+			factors[n].append(n)
+			for np in range(2 * n, m, n):
+				c = np
+				while c % n == 0:
+					factors[np].append(n)
+					c /= n
+
+	return factors
+
+
+def factors_of(n):
+	factors = []
+	for i in range(2, int(sqrt(n)) + 1):
+		if n <= 1: break
+		while n % i == 0:
+			factors.append(i)
+			n /= i
+	return factors
