@@ -8,18 +8,46 @@
 #
 
 import euler_shared
+import itertools, functools, operator, math
 
-# INCOMPLETE SOLUTION #
-
+# Solves in about 0.07s
 def solve(n):
-	# Overlaps will only occur when we have exponents of lower numbers.
-	# Example: 2^8 = 4^4 or 6^6 = 6^2^3 = 36^3
-	primality = euler_shared.list_primes(100)
-	not_primes = [x for x in range(2, 101) if not primality[x]]
-	return 0
+	valid = (n-1)*(n-1)
+	factors_of_b = euler_shared.list_factors_of(n)
+	c_o_f_o_b = [[],[]]
+	for i in range(2, n+1):
+		f_o_b = factors_of_b[i]
+		c_o_f_o_b.append(list(set(euler_shared.flatten([itertools.combinations(f_o_b, i) for i in range(1, len(f_o_b))]))))
+
+	for a in range(2, n+1):
+		for b in range(2, n+1):
+			perms = c_o_f_o_b[b]
+			multiplied = [functools.reduce(operator.mul, i) for i in perms]
+			for combo in multiplied:
+				if pow(a, combo) <= n:
+					valid -= 1
+	return valid + 1
+
+# Alternate brute force approach
+# Solves in about 1.35s
+def brute_force(n):
+	known = []
+	corresponding = []
+	n_v = [0 for i in range(n+1)]
+	for a in range(2, n+1):
+		for b in range(2, n+1):
+			res = pow(a, b)
+			if res in known:
+				known.append('Known')
+				what_has_it = known.index(res)
+				(a_t, b_t) = corresponding[what_has_it]
+				n_v[a_t] += 1
+			else:
+				known.append(res)
+			corresponding.append((a, b))
+	return sum(1 if i != 'Known' else 0 for i in known)
 
 def p029():
-	print(euler_shared.list_factors_of(10))
 	return solve(100)
 
 if __name__ == '__main__':

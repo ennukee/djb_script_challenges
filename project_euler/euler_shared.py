@@ -18,6 +18,11 @@ def list_primes(m):
 				prime_v[np] = False
 	return prime_v
 
+# For the sake of not breaking older code, we will just name this slightly awkwardly
+def give_primes(m):
+	primality = list_primes(m)
+	return [x for x in range(m+1) if primality[x]]
+
 # We choose this approach of a simple range(2, int(sqrt(x) + 1)) because
 # this overall method is much faster for large `x` even if the code is slightly
 # uglier
@@ -45,15 +50,15 @@ def is_palindrome(n):
 
 def list_factors_of(m):
 	# Mimicking the Sieve of Eratosthenes
-	factors = [[0], [1]] + [[]] * (m - 1)
+	factors = [[0], [1]] + [[] for i in range(m-1)]
 	prime_v = [False, False] + [True] * (m - 1)
 
 	# Max bound while sieving is sqrt(upper bound)
-	for n in range(2, int(sqrt(m)) + 1):
+	for n in range(2, m+1):
 
 		if len(factors[n]) == 0:
 			factors[n].append(n)
-			for np in range(2 * n, m, n):
+			for np in range(2 * n, m+1, n):
 				c = np
 				while c % n == 0:
 					factors[np].append(n)
@@ -70,3 +75,6 @@ def factors_of(n):
 			factors.append(i)
 			n /= i
 	return factors
+
+def flatten(a):
+	return [item for sublist in a for item in sublist]
