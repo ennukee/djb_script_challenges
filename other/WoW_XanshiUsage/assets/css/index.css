@@ -1,0 +1,92 @@
+body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-image: url(../img/back.png);
+
+	font-family: 'Palanquin Dark', sans-serif;
+}
+
+#container {
+	display: flex;
+	justify-content: center;
+}
+
+#center {
+	width: 50%;
+	min-width: 600px;
+	max-width: 900px;
+	padding-bottom: 15%;
+	height: 100vh;
+	padding: 15px;
+	border-radius: 2px;
+	
+	background-color: white;
+}
+
+#title-zone {
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+#title {
+	font-size: 70px;
+	font-weight: bold;
+	margin-bottom: -20px;
+}
+
+#subtitle {
+	font-size: 28px;
+}
+
+#input {
+	text-align: center;
+}
+
+#input #log_input #id_label {
+	font-size: 20px;
+}
+
+#input #log_input #wcl_id {
+	width: 80%;
+	height: 24px;
+
+}
+
+#input #input_submit {
+	margin: 20px 10% 0 10%;
+	width: 80%;
+	background-color: #fcf3cb;
+	border: 1px solid black;
+}
+
+#input #input_submit:hover {
+	background-color: #fcf3ab;
+	cursor: pointer;
+	cursor: hand;
+}
+
+#input #input_submit:active {
+	background-color: #ccc37b;
+}
+
+.hr {
+	margin: 50px 0 0 0;
+	height: 1px;
+	background-color: black;
+
+}
+
+#output {
+	padding: 15px;
+}
+
+#output #js_out_temp {
+	margin-top: -3px;
+}
+
+#output #js_out_err {
+	color: red;
+	margin-top: -3px;
+}
+

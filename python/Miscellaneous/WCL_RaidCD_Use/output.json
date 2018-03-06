@@ -1,0 +1,569 @@
+[
+  {
+    "resourceActor": 1,
+    "pin": "0",
+    "hitPoints": 3056520,
+    "classResources": [
+      {
+        "cost": 24200,
+        "amount": 1026103,
+        "type": 0,
+        "max": 1100000
+      }
+    ],
+    "targetIsFriendly": false,
+    "maxHitPoints": 3056520,
+    "attackPower": 9457,
+    "sourceIsFriendly": true,
+    "itemLevel": 891,
+    "timestamp": 1190624,
+    "spellPower": 44640,
+    "target": {
+      "icon": "NPC",
+      "guid": 0,
+      "type": "NPC",
+      "name": "Environment",
+      "id": -1
+    },
+    "sourceID": 38,
+    "ability": {
+      "abilityIcon": "spell_nature_stoneskintotem.jpg",
+      "type": 8,
+      "name": "Earthen Shield Totem",
+      "guid": 198838
+    },
+    "y": 23333,
+    "x": -319596,
+    "type": "cast",
+    "resolve": 0
+  },
+  {
+    "resourceActor": 1,
+    "pin": "0",
+    "hitPoints": 2857560,
+    "classResources": [
+      {
+        "cost": 24200,
+        "amount": 1100000,
+        "type": 0,
+        "max": 1100000
+      }
+    ],
+    "targetIsFriendly": false,
+    "maxHitPoints": 2857560,
+    "attackPower": 9034,
+    "sourceIsFriendly": true,
+    "itemLevel": 883,
+    "timestamp": 1200894,
+    "spellPower": 35330,
+    "target": {
+      "icon": "NPC",
+      "guid": 0,
+      "type": "NPC",
+      "name": "Environment",
+      "id": -1
+    },
+    "sourceID": 43,
+    "ability": {
+      "abilityIcon": "spell_nature_stoneskintotem.jpg",
+      "type": 8,
+      "name": "Earthen Shield Totem",
+      "guid": 198838
+    },
+    "y": 27312,
+    "x": -320216,
+    "type": "cast",
+    "resolve": 0
+  },
+  {
+    "resourceActor": 1,
+    "pin": "0",
+    "hitPoints": 3056520,
+    "classResources": [
+      {
+        "amount": 1041339,
+        "type": 0,
+        "max": 1100000
+      }
+    ],
+    "targetIsFriendly": false,
+    "maxHitPoints": 3056520,
+    "attackPower": 9457,
+    "sourceIsFriendly": true,
+    "itemLevel": 891,
+    "timestamp": 1209418,
+    "spellPower": 44640,
+    "target": {
+      "icon": "NPC",
+      "guid": 0,
+      "type": "NPC",
+      "name": "Environment",
+      "id": -1
+    },
+    "sourceID": 38,
+    "ability": {
+      "abilityIcon": "ability_shaman_ancestralguidance.jpg",
+      "type": 8,
+      "name": "Ancestral Guidance",
+      "guid": 108281
+    },
+    "y": 31369,
+    "x": -318753,
+    "type": "cast",
+    "resolve": 0
+  },
+  {
+    "resourceActor": 1,
+    "pin": "0",
+    "hitPoints": 2857560,
+    "classResources": [
+      {
+        "cost": 12320,
+        "amount": 1097827,
+        "type": 0,
+        "max": 1100000
+      }
+    ],
+    "targetIsFriendly": false,
+    "maxHitPoints": 2857560,
+    "attackPower": 9034,
+    "sourceIsFriendly": true,
+    "itemLevel": 883,
+    "timestamp": 1215752,
+    "spellPower": 36597,
+    "target": {
+      "icon": "NPC",
+      "guid": 0,
+      "type": "NPC",
+      "name": "Environment",
+      "id": -1
+    },
+    "sourceID": 43,
+    "ability": {
+      "abilityIcon": "ability_shaman_healingtide.jpg",
+      "type": 8,
+      "name": "Healing Tide Totem",
+      "guid": 108280
+    },
+    "y": 29849,
+    "x": -320786,
+    "type": "cast",
+    "resolve": 0
+  },
+  {
+    "resourceActor": 1,
+    "pin": "0",
+    "hitPoints": 2729029,
+    "classResources": [
+      {
+        "amount": 1089088,
+        "type": 0,
+        "max": 1100000
+      }
+    ],
+    "targetIsFriendly": false,
+    "maxHitPoints": 2857560,
+    "attackPower": 9034,
+    "sourceIsFriendly": true,
+    "itemLevel": 883,
+    "timestamp": 1218303,
+    "spellPower": 36597,
+    "target": {
+      "icon": "NPC",
+      "guid": 0,
+      "type": "NPC",
+      "name": "Environment",
+      "id": -1
+    },
+    "sourceID": 43,
+    "ability": {
+      "abilityIcon": "ability_shaman_ancestralguidance.jpg",
+      "type": 8,
+      "name": "Ancestral Guidance",
+      "guid": 108281
+    },
+    "y": 30342,
+    "x": -320848,
+    "type": "cast",
+    "resolve": 0
+  },
+  {
+    "resourceActor": 1,
+    "pin": "0",
+    "hitPoints": 2323761,
+    "classResources": [
+      {
+        "cost": 48400,
+        "amount": 1027549,
+        "type": 0,
+        "max": 1100000
+      }
+    ],
+    "targetIsFriendly": false,
+    "maxHitPoints": 3594600,
+    "attackPower": 0,
+    "sourceIsFriendly": true,
+    "itemLevel": 902,
+    "timestamp": 1220646,
+    "spellPower": 50250,
+    "target": {
+      "icon": "NPC",
+      "guid": 0,
+      "type": "NPC",
+      "name": "Environment",
+      "id": -1
+    },
+    "sourceID": 8,
+    "ability": {
+      "abilityIcon": "spell_holy_divinehymn.jpg",
+      "type": 2,
+      "name": "Divine Hymn",
+      "guid": 64843
+    },
+    "y": 30816,
+    "x": -318546,
+    "type": "cast",
+    "resolve": 0
+  },
+  {
+    "resourceActor": 1,
+    "pin": "0",
+    "hitPoints": 2659243,
+    "classResources": [
+      {
+        "amount": 1090435,
+        "type": 0,
+        "max": 1100000
+      }
+    ],
+    "targetIsFriendly": false,
+    "maxHitPoints": 3986147,
+    "attackPower": 46735,
+    "sourceIsFriendly": true,
+    "itemLevel": 888,
+    "timestamp": 1225728,
+    "spellPower": 46735,
+    "target": {
+      "icon": "NPC",
+      "guid": 0,
+      "type": "NPC",
+      "name": "Environment",
+      "id": -1
+    },
+    "sourceID": 11,
+    "ability": {
+      "abilityIcon": "spell_holy_auramastery.jpg",
+      "type": 2,
+      "name": "Aura Mastery",
+      "guid": 31821
+    },
+    "y": 31076,
+    "x": -317661,
+    "type": "cast",
+    "resolve": 0
+  },
+  {
+    "resourceActor": 1,
+    "pin": "0",
+    "hitPoints": 3043167,
+    "classResources": [
+      {
+        "cost": 40480,
+        "amount": 756292,
+        "type": 0,
+        "max": 1100000
+      }
+    ],
+    "targetIsFriendly": false,
+    "maxHitPoints": 3609435,
+    "attackPower": 9030,
+    "sourceIsFriendly": true,
+    "itemLevel": 896,
+    "timestamp": 1226464,
+    "spellPower": 45390,
+    "target": {
+      "icon": "NPC",
+      "guid": 0,
+      "type": "NPC",
+      "name": "Environment",
+      "id": -1
+    },
+    "sourceID": 6,
+    "ability": {
+      "abilityIcon": "spell_nature_tranquility.jpg",
+      "type": 8,
+      "name": "Tranquility",
+      "guid": 740
+    },
+    "y": 30994,
+    "x": -319535,
+    "type": "cast",
+    "resolve": 0
+  },
+  {
+    "resourceActor": 1,
+    "pin": "0",
+    "hitPoints": 2838320,
+    "classResources": [
+      {
+        "cost": 24200,
+        "amount": 619341,
+        "type": 0,
+        "max": 1100000
+      }
+    ],
+    "targetIsFriendly": false,
+    "maxHitPoints": 3056520,
+    "attackPower": 9457,
+    "sourceIsFriendly": true,
+    "itemLevel": 891,
+    "timestamp": 1251471,
+    "spellPower": 44640,
+    "target": {
+      "icon": "NPC",
+      "guid": 0,
+      "type": "NPC",
+      "name": "Environment",
+      "id": -1
+    },
+    "sourceID": 38,
+    "ability": {
+      "abilityIcon": "spell_nature_stoneskintotem.jpg",
+      "type": 8,
+      "name": "Earthen Shield Totem",
+      "guid": 198838
+    },
+    "y": 31039,
+    "x": -318100,
+    "type": "cast",
+    "resolve": 0
+  },
+  {
+    "resourceActor": 1,
+    "pin": "0",
+    "hitPoints": 2531683,
+    "classResources": [
+      {
+        "cost": 12320,
+        "amount": 550503,
+        "type": 0,
+        "max": 1100000
+      }
+    ],
+    "targetIsFriendly": false,
+    "maxHitPoints": 3274020,
+    "attackPower": 9457,
+    "sourceIsFriendly": true,
+    "itemLevel": 891,
+    "timestamp": 1262343,
+    "spellPower": 47265,
+    "target": {
+      "icon": "NPC",
+      "guid": 0,
+      "type": "NPC",
+      "name": "Environment",
+      "id": -1
+    },
+    "sourceID": 38,
+    "ability": {
+      "abilityIcon": "ability_shaman_healingtide.jpg",
+      "type": 8,
+      "name": "Healing Tide Totem",
+      "guid": 108280
+    },
+    "y": 31039,
+    "x": -318100,
+    "type": "cast",
+    "resolve": 0
+  },
+  {
+    "resourceActor": 1,
+    "pin": "0",
+    "hitPoints": 1808681,
+    "classResources": [
+      {
+        "cost": 24200,
+        "amount": 767189,
+        "type": 0,
+        "max": 1100000
+      }
+    ],
+    "targetIsFriendly": false,
+    "maxHitPoints": 2857560,
+    "attackPower": 9034,
+    "sourceIsFriendly": true,
+    "itemLevel": 883,
+    "timestamp": 1267721,
+    "spellPower": 36597,
+    "target": {
+      "icon": "NPC",
+      "guid": 0,
+      "type": "NPC",
+      "name": "Environment",
+      "id": -1
+    },
+    "sourceID": 43,
+    "ability": {
+      "abilityIcon": "spell_shaman_spiritlink.jpg",
+      "type": 8,
+      "name": "Spirit Link Totem",
+      "guid": 98008
+    },
+    "y": 30777,
+    "x": -319312,
+    "type": "cast",
+    "resolve": 0
+  },
+  {
+    "resourceActor": 1,
+    "pin": "0",
+    "hitPoints": 3152423,
+    "classResources": [
+      {
+        "cost": 24200,
+        "amount": 701835,
+        "type": 0,
+        "max": 1100000
+      }
+    ],
+    "targetIsFriendly": false,
+    "maxHitPoints": 3286194,
+    "attackPower": 9034,
+    "sourceIsFriendly": true,
+    "itemLevel": 883,
+    "timestamp": 1273754,
+    "spellPower": 36597,
+    "target": {
+      "icon": "NPC",
+      "guid": 0,
+      "type": "NPC",
+      "name": "Environment",
+      "id": -1
+    },
+    "sourceID": 43,
+    "ability": {
+      "abilityIcon": "spell_nature_stoneskintotem.jpg",
+      "type": 8,
+      "name": "Earthen Shield Totem",
+      "guid": 198838
+    },
+    "y": 30658,
+    "x": -318745,
+    "type": "cast",
+    "resolve": 0
+  },
+  {
+    "resourceActor": 1,
+    "pin": "0",
+    "hitPoints": 1835170,
+    "classResources": [
+      {
+        "cost": 24200,
+        "amount": 386315,
+        "type": 0,
+        "max": 1100000
+      }
+    ],
+    "targetIsFriendly": false,
+    "maxHitPoints": 3274020,
+    "attackPower": 9457,
+    "sourceIsFriendly": true,
+    "itemLevel": 891,
+    "timestamp": 1283636,
+    "spellPower": 47265,
+    "target": {
+      "icon": "NPC",
+      "guid": 0,
+      "type": "NPC",
+      "name": "Environment",
+      "id": -1
+    },
+    "sourceID": 38,
+    "ability": {
+      "abilityIcon": "spell_shaman_spiritlink.jpg",
+      "type": 8,
+      "name": "Spirit Link Totem",
+      "guid": 98008
+    },
+    "y": 30998,
+    "x": -318018,
+    "type": "cast",
+    "resolve": 0
+  },
+  {
+    "resourceActor": 1,
+    "pin": "0",
+    "hitPoints": 1895607,
+    "classResources": [
+      {
+        "cost": 24200,
+        "amount": 1100000,
+        "type": 0,
+        "max": 1100000
+      }
+    ],
+    "targetIsFriendly": false,
+    "maxHitPoints": 3444360,
+    "attackPower": 9457,
+    "sourceIsFriendly": true,
+    "itemLevel": 901,
+    "timestamp": 1285064,
+    "spellPower": 43631,
+    "target": {
+      "icon": "NPC",
+      "guid": 0,
+      "type": "NPC",
+      "name": "Environment",
+      "id": -1
+    },
+    "sourceID": 10,
+    "ability": {
+      "abilityIcon": "spell_shaman_spiritlink.jpg",
+      "type": 8,
+      "name": "Spirit Link Totem",
+      "guid": 98008
+    },
+    "y": 31597,
+    "x": -317817,
+    "type": "cast",
+    "resolve": 0
+  },
+  {
+    "resourceActor": 1,
+    "pin": "0",
+    "hitPoints": 2223606,
+    "classResources": [
+      {
+        "cost": 24200,
+        "amount": 1096929,
+        "type": 0,
+        "max": 1100000
+      }
+    ],
+    "targetIsFriendly": false,
+    "maxHitPoints": 3444360,
+    "attackPower": 9457,
+    "sourceIsFriendly": true,
+    "itemLevel": 901,
+    "timestamp": 1287460,
+    "spellPower": 43631,
+    "target": {
+      "icon": "NPC",
+      "guid": 0,
+      "type": "NPC",
+      "name": "Environment",
+      "id": -1
+    },
+    "sourceID": 10,
+    "ability": {
+      "abilityIcon": "spell_nature_stoneskintotem.jpg",
+      "type": 8,
+      "name": "Earthen Shield Totem",
+      "guid": 198838
+    },
+    "y": 31493,
+    "x": -317294,
+    "type": "cast",
+    "resolve": 0
+  }
+]
