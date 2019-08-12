@@ -205,3 +205,7 @@ function userString(id) {
 
 </p>   
 </details>
+
+## Closing 
+
+Thanks for reading `(noob) => { return noob }` and if you liked the blog make sure to follow the Twitter at @ennukee for more code nerdings.
