@@ -1,7 +1,7 @@
 # (noob) => { return noob } JS
 ## Array Destructuring
 
-Welcome back to "for noobs by a noob". In this article, I'll be talking about one of the coolest yet most confusing looking ES6 syntax: Array Destructuring (and objects in a later article). 
+Welcome back to "for noobs by a noob", where I (a fellow noob) will teach you concepts that I learned, while I learned them. In this article, I'll be talking about one of the coolest yet most confusing looking ES6 syntax: Array Destructuring (and objects in a later article). 
 
 **I encourage you to open your browser's console and plant some snippets in to follow along and test with!**
 
