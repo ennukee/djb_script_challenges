@@ -179,6 +179,7 @@ Now that we've gone through all the fundamental information we need to know for 
 
 <details><summary>Original code</summary>
 <p>
+   
 ```js
 function userString(id) {
   const userInfo = getUserInformation(310);
@@ -188,16 +189,19 @@ function userString(id) {
   return `${name} - ${level} ${class}`
 }
 ```
+
 </p>
 </details>
 
-<details><summary>**Answer**</summary>
+<details><summary>Answer</summary>
 <p>
+   
 ```js
 function userString(id) {
   const [, name, class, level] = getUserInformation(310);
   return `${name} - ${level} ${class}`
 }
 ```
+
 </p>   
 </details>
