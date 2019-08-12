@@ -1,7 +1,7 @@
 # (noob) => { return noob } JS
-## Destructuring
+## Array Destructuring
 
-Welcome back to "for noobs by a noob". In this article, I'll be talking about one of the coolest yet most confusing looking ES6 syntax: Array Destructuring (and objects!). 
+Welcome back to "for noobs by a noob". In this article, I'll be talking about one of the coolest yet most confusing looking ES6 syntax: Array Destructuring (and objects in a later article). 
 
 **I encourage you to open your browser's console and plant some snippets in to follow along and test with!**
 
@@ -72,7 +72,19 @@ Does this throw any errors? Issues at all? **Nope**.
 
  * In the first case, we will simply ignore the presence of the third value and get `b = 1, c = 2`. The 3 is discarded. 
  * In the second case, we will return undefined for the fields that do not exist. So we'd get `d = 1, e = 2, f = 3, g = undefined`.
- 
+
+### Skipping items?
+
+We saw it in the first example, but you can skip items **by writing nothing where there would otherwise be a variable**. So,
+
+```js
+let [a, b, c] = [1, 2, 3]
+// If you don't care for 2...
+let [a, , c] = [1, 2, 3]
+```
+
+I recommend maintaining whitespace, as it helps readability and understanding when viewing this.
+
 ### What if we have an unknown length array and we want all items past a point?
  
 This uses a concept that you may have seen in function declarations called the **gather** operator. Otherwise known as the **spread** operator under different cases. [See my article on this here](#).
