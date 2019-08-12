@@ -52,7 +52,7 @@ let [, b, , c, d] = [1, 2, 3, 4, 5];
 
 The whitespace here is for readability reasons, you could also easily write `let [,b,,c,d]` instead. Welcome to the future.
 
-## The Basics / FAQ
+## The Syntax / FAQ
 
 Now that we've seen it used, let's talk about it and its common confusions.
 
@@ -70,8 +70,8 @@ let [d, e, f, g] = a;
 
 Does this throw any errors? Issues at all? **Nope**. 
 
- * In the first case, we will simply ignore the presence of the third value and get `b = 1, c = 2`. The 3 is discarded. 
- * In the second case, we will return undefined for the fields that do not exist. So we'd get `d = 1, e = 2, f = 3, g = undefined`.
+ * In the first case, we will simply ignore the presence of the third value and get `b = 1, c = 2`. The 3 is discarded. **Unaccounted-for values are ignored**.
+ * In the second case, we will return undefined for the fields that do not exist. So we'd get `d = 1, e = 2, f = 3, g = undefined`. **Overly-accounted-for variables will be given undefined** (or their default zero value, like \[\] or {})
 
 ### Skipping items?
 
@@ -116,4 +116,43 @@ let [b, c, d, ...e] = a;
 // ...
 let [b, c, ...d] = a;
 // b = 1, c = 2, d = [3]
+```
+
+### Default values
+
+
+## Underlying Code
+
+### State Preservation
+
+One thing many people skip over is the underlying code involved in this operation.
+
+Firstly, the state of the operation is preserved prior to the assignments. That is to say, you can swap values or do something with data you want to keep but also reassign the variable for early on. For example,
+
+```js
+let a = 3, b = 5;
+[a, b] = [b, a] // b = 5, a = 3
+
+let a = 3, b = 4, c = 5, d = 6;
+[a, b, c, d] = [d, a, a, a]
+// Even though a = d is the first "connection", all of b, c, d will be assigned the old value of a
+// a = 6, b = c = d = 3
+```
+
+### Return value / Triggering the syntax
+
+Imagine you run into the following code at work:
+
+```js
+let a = [b, c, , ...d] = [1, 2, 3, 4, 5, 6]
+```
+
+What does this return? What are the values of a, b, c and d? I'll give you a minute. Scroll down when you're ready to go on.
+
+Before I reveal the answer, ask yourself, is this valid syntax? We have an array-looking item in the middle of a two-pronged assignment operation. Well, **it is valid**. The item in the middle is not actually an array object, it's a destructuring assignment. As long as this destructuring syntax is on the receiving end of an assignment operation (i.e. on the left side of an equals), it will trigger destructuring.
+
+You may think it has to be an array, but not really. The following code is completely valid:
+
+```js
+let a = [b, c, d] || [] = 5;
 ```
