@@ -52,7 +52,7 @@ let [, b, , c, d] = [1, 2, 3, 4, 5];
 
 The whitespace here is for readability reasons, you could also easily write `let [,b,,c,d]` instead. Welcome to the future.
 
-## The Basics
+## The Basics / FAQ
 
 Now that we've seen it used, let's talk about it and its common confusions.
 
@@ -72,3 +72,36 @@ Does this throw any errors? Issues at all? **Nope**.
 
  * In the first case, we will simply ignore the presence of the third value and get `b = 1, c = 2`. The 3 is discarded. 
  * In the second case, we will return undefined for the fields that do not exist. So we'd get `d = 1, e = 2, f = 3, g = undefined`.
+ 
+### What if we have an unknown length array and we want all items past a point?
+ 
+This uses a concept that you may have seen in function declarations called the **gather** operator. Otherwise known as the **spread** operator under different cases. [See my article on this here](#).
+ 
+Just as quick rundown for this operator, it is used to either **gather** extra items or **spread** out an array of items. Some use cases:
+ 
+```js
+let a = [1, 2, 3]
+function b(c, ...d) {
+   return d // [2, 3]
+}
+b(...a) // b(1, 2, 3)
+```
+
+This is the same syntax used for gathering values in a destructuring. As usual, it must be at the **end** of the structuring. 
+```js
+let a = [1, 2, 3]
+let [b, ...c] = a;
+// b = 1
+// c = [2, 3]
+```
+
+Keep in mind that this gather operation **will always be an array regardless of match count**. So, for example...
+
+```js
+let a = [1, 2, 3]
+let [b, c, d, ...e] = a;
+// b = 1, c = 2, d = 3, e = []
+// ...
+let [b, c, ...d] = a;
+// b = 1, c = 2, d = [3]
+```
