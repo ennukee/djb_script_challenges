@@ -120,6 +120,19 @@ let [b, c, ...d] = a;
 
 ### Default values
 
+If you've ever set a default value for a function parameter, you'll get this quite quickly. For this, all you must do is apply an `= default_value` to the right of the variable you want a default value for. For example,
+
+```js
+let [b, c, d = 5] = [1]
+// b = 1, c = undefined, d = 5
+```
+
+You can also do this for the rest operator to prevent the empty array case.
+
+```js
+let [b, c, d = [1, 2, 3]] = [5];
+// b = 5, c = undefined, d = [1, 2, 3]
+```
 
 ## Underlying Code
 
@@ -144,15 +157,43 @@ let a = 3, b = 4, c = 5, d = 6;
 Imagine you run into the following code at work:
 
 ```js
-let a = [b, c, , ...d] = [1, 2, 3, 4, 5, 6]
+let a = [b, c, d] = [1, 2, 3, 4, 5, 6]
 ```
 
 What does this return? What are the values of a, b, c and d? I'll give you a minute. Scroll down when you're ready to go on.
 
 Before I reveal the answer, ask yourself, is this valid syntax? We have an array-looking item in the middle of a two-pronged assignment operation. Well, **it is valid**. The item in the middle is not actually an array object, it's a destructuring assignment. As long as this destructuring syntax is on the receiving end of an assignment operation (i.e. on the left side of an equals), it will trigger destructuring.
 
-You may think it has to be an array, but not really. The following code is completely valid:
+Now... what *are* the values of a, b, c and d then? The only real confusing bit is what `a` will end up as, it should be relatively straight-forward that `b = 1, c = 2, d = 3`. So, is `a = [1, 2, 3]` or is `a = [1, 2, 3, 4, 5, 6]`? If you said the latter, you would be correct. The return value of a destructuring operation is not the destructured array but rather the original array that was destructured.
+
+**However**, keep in mind that variables in the second step of this destructuring will actually need to be pre-defined before being used. So in actuality, my snippet above isn't entirely valid since I never wrote out the variable definitions of b, c or d. The correct statement would be:
 
 ```js
-let a = [b, c, d] || [] = 5;
+let b, c, d;
+let a = [b, c, d] = [1, 2, 3, 4, 5, 6];
 ```
+
+## Wrapping it back around
+
+Now that we've gone through all the fundamental information we need to know for array destructuring, let us return to the original example. For the following code, how would you rewrite it using destructuring?
+
+<details><summary>Original code</summary>
+```js
+function userString(id) {
+  const userInfo = getUserInformation(310);
+  const name = userInfo[1];
+  const class = userInfo[2];
+  const level = userInfo[3];
+  return `${name} - ${level} ${class}`
+}
+```   
+</details>
+
+<details><summary>**Answer**</summary>
+```js
+function userString(id) {
+  const [, name, class, level] = getUserInformation(310);
+  return `${name} - ${level} ${class}`
+}
+```   
+</details>
