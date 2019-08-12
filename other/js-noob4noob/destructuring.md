@@ -178,6 +178,7 @@ let a = [b, c, d] = [1, 2, 3, 4, 5, 6];
 Now that we've gone through all the fundamental information we need to know for array destructuring, let us return to the original example. For the following code, how would you rewrite it using destructuring?
 
 <details><summary>Original code</summary>
+<p>
 ```js
 function userString(id) {
   const userInfo = getUserInformation(310);
@@ -186,14 +187,17 @@ function userString(id) {
   const level = userInfo[3];
   return `${name} - ${level} ${class}`
 }
-```   
+```
+</p>
 </details>
 
 <details><summary>**Answer**</summary>
+<p>
 ```js
 function userString(id) {
   const [, name, class, level] = getUserInformation(310);
   return `${name} - ${level} ${class}`
 }
-```   
+```
+</p>   
 </details>
