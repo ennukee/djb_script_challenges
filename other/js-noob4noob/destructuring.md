@@ -13,7 +13,7 @@ userStore = {
 }
 // ...
 function getUserInformation(id) {
-  return Object.values(this.userStore[id]);
+  return this.userStore[id];
 }
 
 function userString(id) {
