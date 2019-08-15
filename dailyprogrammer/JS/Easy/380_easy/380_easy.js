@@ -8,16 +8,17 @@
         Bonus #1:   245ms
         Bonus #2:    34ms
         Bonus #3:    15ms
-        Bonus #4:    25ms (slow version 41ms) 
+        Bonus #4:    41ms (slow version 59ms) 
         Bonus #5:   433ms
-        Total:      760ms
+        Total:      781ms
     
     For the sake of accurate benchmarking, no data is cached
       between bonuses or test cases.
 */
 
 const { performance } = require('perf_hooks');
-const { enable1 } = require('../dp_util'); 
+const { enable1 } = require('../../dp_util'); 
+let en1 = enable1(require('path'));
 
 // Setting up dictionary with given data
 const morse_vals = '.- -... -.-. -.. . ..-. --. .... .. .--- -.- .-.. -- -. --- .--. --.- .-. ... - ..- ...- .-- -..- -.-- --..'.split(' ');
@@ -55,7 +56,7 @@ function basic_tests_func() {
 // Bonus #1
 function bonus1() {
     const tracker = {}
-    for (let word of enable1.split('\n')) {
+    for (let word of en1.split('\n')) {
         const smorsed = smorse(word);
         tracker[smorsed] |= 0;
         tracker[smorsed] += 1;
@@ -69,7 +70,7 @@ function bonus1() {
 // Bonus 2
 function bonus2() {
     // Brute-force version
-    for (let word of enable1.split('\n')) {
+    for (let word of en1.split('\n')) {
         const smorsed = smorse(word);
         if (/---------------/g.exec(smorsed)) {
             console.log(`Found: ${word} (${smorsed})`)
@@ -80,7 +81,7 @@ function bonus2() {
 
 // Bonus 3
 function bonus3() {
-    for (let word of enable1.split('\n').filter(w => w.length === 21)) {
+    for (let word of en1.split('\n').filter(w => w.length === 21)) {
         const smorsed = smorse(word);
         if (smorsed.replace(/[^\-]/g, "").length === smorsed.replace(/[^\.]/g, "").length && word !== 'counterdemonstrations') {
             console.log(`Found: ${word} (${smorsed})`);
@@ -92,8 +93,9 @@ function bonus3() {
 // Bonus 4
 function bonus4() {
     const isPalindrome = (val) => val.slice(Math.ceil(val / 2)) === [...val.slice(Math.ceil(val / 2))].reverse().join('');
-    for (let word of enable1.split('\n').filter(w => w.length === 13)) {
-        if (isPalindrome(word)) {
+    for (let word of en1.split('\n').filter(w => w.length === 13)) {
+        const smorsed = smorse(word);
+        if (isPalindrome(smorsed)) {
             console.log(`Found: ${word} (${smorsed})`);
         }
     }
@@ -108,8 +110,9 @@ function bonus4_manual() {
         })
         return valid;
     }
-    for (let word of enable1.split('\n').filter(w => w.length === 13)) {
-        if (isPalindrome(word)) {
+    for (let word of en1.split('\n').filter(w => w.length === 13)) {
+        const smorsed = smorse(word);
+        if (isPalindrome(smorsed)) {
             console.log(`Found: ${word} (${smorsed})`);
         }
     }
@@ -125,7 +128,7 @@ function bonus5() {
     }
     let combos = getAllCombos(13);
     let seen = new Set([]);
-    for (let word of enable1.split('\n')) {
+    for (let word of en1.split('\n')) {
         const smorsed = smorse(word);
         if (smorsed.length >= 13) {
             for(let i = 0; i <= smorsed.length - 13; i++) {
