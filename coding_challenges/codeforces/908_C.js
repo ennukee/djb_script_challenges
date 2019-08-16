@@ -2,7 +2,7 @@
  * Codeforces Challenge #908_C
  *    @ennukee
  * 
- * Time Elapsed: 2.45ms (test case)
+ * Time Elapsed: 2.43ms (test case)
  *
  * @param {int} n -- Number of puts
  * @param {int} r -- Radius of each put
